@@ -2,7 +2,7 @@
     <?php echo $this->form?>
 </div>
 <?php if(count($this->data)):?>
-    <table class="datatable">
+    <table class="zebra-striped">
         <?php foreach($this->data as $data): ?>
             <tr>
                 <td><?php echo nl2br($data->description)?></td>
@@ -34,5 +34,5 @@
         return false;
     });
 
-    $('input[type=button], input[type=submit]').button();
+    
 </script>

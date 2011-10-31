@@ -49,10 +49,11 @@ class Notepad_Form_Notepad extends Zend_Form
                     ->addValidators($validators['description'])
                     ->addFilters($filters['description'])
                     ->setAttrib('rows', 10)
+                    ->setAttrib('class', 'xxlarge')
                     ->setAllowEmpty(false);
 
         $this->addElement($id)
              ->addElement($description)
-             ->addElement('submit', 'Save');
+             ->addElement('submit', 'Save', array('class' => 'btn primary'));
    }
 }
